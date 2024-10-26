@@ -1,3 +1,12 @@
+/*
+ * Author: Gabriel Nakamoto (gabriel@nakamoto.ca)
+ * Date: Fri 25 Oct 2024 20:38:54 EDT
+ *
+ * Problem: Vacation (https://atcoder.jp/contests/dp/tasks/dp_c)
+ * Type: Dynamic Programming
+ *
+*/
+
 #include <bits/stdc++.h>
 
 using namespace std;
@@ -18,8 +27,6 @@ int main(){
     for(int i=0; i<n; ++i)
         cin>>h[0][i]>>h[1][i]>>h[2][i];
 
-    // dp[i] is max happiness points on day i
-    /* dp[0]=max(dp) */
     for(int i=0; i<n; ++i){
         int a=h[0][i], b=h[1][i], c=h[2][i];
         if(i==0){
